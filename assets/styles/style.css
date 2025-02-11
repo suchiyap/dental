@@ -45,7 +45,42 @@ body {
 }
 
 .service-section {
-  background-color: rgb(222 194 186 / 82%);
+  background-color: #f0e8e8;
+}
+
+.service-section img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px 30px 100px 100px;
+}
+
+.service-section .card {
+  position: relative;
+  margin-bottom: 12rem;
+  /* box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.service-desc {
+  background-color: var(--primary-color);
+  padding: 20px;
+  height: 250px;
+  width: 90%;
+  text-align: justify;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 15px;
+
+  h5 {
+    text-align: center;
+    height: 45px;
+  }
+}
+
+.why-choose-us-section,
+.contactUs-section {
+  background-color: #dec2baa6;
 }
 
 @keyframes pulseAnimation {

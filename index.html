@@ -14,13 +14,14 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
     <header>
       <nav
-        class="mx-auto z-10 fixed w-screen items-center justify-between xl:justify-evenly p-4 lg:px-6 flex bg-primary top-0"
+        class="shadow-lg z-10 fixed w-screen items-center justify-between xl:justify-evenly p-4 lg:px-6 flex bg-primary top-0"
         aria-label="Global"
       >
         <div class="flex">
@@ -51,6 +52,7 @@
         </div>
         <div class="hidden lg:flex-1 lg:flex lg:gap-x-12 justify-center">
           <a href="#" class="text-sm/6 font-semibold text-gray-900" data-i18n="home">Home</a>
+          <a href="#" class="text-sm/6 font-semibold text-gray-900" data-i18n="laser">Laser</a>
           <div class="relative dropdown">
             <button
               type="button"
@@ -67,148 +69,26 @@
               </svg>
             </button>
             <div
-              class="dropdown-menu hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              class="dropdown-menu hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-sm overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
             >
               <div class="p-4">
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                  <div
-                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                  >
-                    <svg
-                      class="size-6 group-hover:text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
-                      />
-                    </svg>
-                  </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg text-sm/6 hover:bg-gray-50">
                   <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Analytics
-                      <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
+                    <a href="/rct.html" class="block font-semibold text-gray-900" data-i18n="rct"> </a>
                   </div>
                 </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                  <div
-                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                  >
-                    <svg
-                      class="size-6 group-hover:text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
-                      />
-                    </svg>
-                  </div>
+              </div>
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg text-sm/6 hover:bg-gray-50">
                   <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Engagement
-                      <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Speak directly to your customers</p>
+                    <a href="#" class="block font-semibold text-gray-900" data-i18n="dentalImplant"> </a>
                   </div>
                 </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                  <div
-                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                  >
-                    <svg
-                      class="size-6 group-hover:text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
-                      />
-                    </svg>
-                  </div>
+              </div>
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg text-sm/6 hover:bg-gray-50">
                   <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Security
-                      <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Your customers’ data will be safe and secure</p>
-                  </div>
-                </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                  <div
-                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                  >
-                    <svg
-                      class="size-6 group-hover:text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Integrations
-                      <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Connect with third-party tools</p>
-                  </div>
-                </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                  <div
-                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                  >
-                    <svg
-                      class="size-6 group-hover:text-indigo-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-                      />
-                    </svg>
-                  </div>
-                  <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
-                      Automations
-                      <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
+                    <a href="#" class="block font-semibold text-gray-900" data-i18n="mos"> </a>
                   </div>
                 </div>
               </div>
@@ -216,7 +96,7 @@
           </div>
 
           <a href="#" class="text-sm/6 font-semibold text-gray-900" data-i18n="aboutUs">About Us</a>
-          <a href="#" class="text-sm/6 font-semibold text-gray-900" data-i18n="contactUs">Contact Us</a>
+          <a href="#contactUs" class="text-sm/6 font-semibold text-gray-900" data-i18n="contactUs">Contact Us</a>
           <div class="relative dropdown">
             <button
               type="button"
@@ -300,6 +180,12 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  data-i18n="laser"
+                  >Laser</a
+                >
                 <div class="-mx-3 dropdown">
                   <button
                     type="button"
@@ -330,40 +216,20 @@
                   <!-- 'Product' sub-menu, show/hide based on menu state. -->
                   <div class="mt-2 space-y-2 hidden dropdown-menu" id="disclosure-1">
                     <a
-                      href="#"
+                      href="/rct.html"
                       class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >Analytics</a
-                    >
+                      data-i18n="rct"
+                    ></a>
                     <a
                       href="#"
                       class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >Engagement</a
-                    >
+                      data-i18n="dentalImplant"
+                    ></a>
                     <a
                       href="#"
                       class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >Security</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >Integrations</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >Automations</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >Watch demo</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >Contact sales</a
-                    >
+                      data-i18n="mos"
+                    ></a>
                   </div>
                 </div>
                 <a
@@ -374,7 +240,7 @@
                 >
 
                 <a
-                  href="#"
+                  href="#contactUs"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   data-i18n="contactUs"
                   >Contact Us</a
@@ -440,11 +306,7 @@
     </header>
     <div class="mt-20">
       <section class="cover-photo-container relative">
-        <img
-          src="https://placehold.co/2048x800/000000/FFFFFF/png"
-          alt="Cover Photo"
-          class="w-full cover-photo object-cover object-top"
-        />
+        <img src="./assets/images/cover.jpg" alt="Cover Photo" class="w-full cover-photo object-cover object-top" />
         <div
           data-aos="fade-right"
           class="overlay-cover text-white flex flex-col justify-center max-w-3xl gap-5 items-start p-8 xl:p-12"
@@ -465,26 +327,707 @@
       <section class="service-section">
         <div class="container mx-auto">
           <div class="py-16 px-8 xl:px-12">
-            <div class="text-center text-5xl font-bold mb-10" data-i18n="ourServices"></div>
-            <div class="grid grid-cols-10 gap-4">
-              <div class="col-span-2 p-4 ps-10 border bg-white rounded-s-full">
-                <img src="./assets/images/services/implant.png" alt="Dental Implant" class="w-full" />
+            <div class="text-center">
+              <div class="text-5xl font-bold mb-5" data-i18n="ourServices"></div>
+              <p class="text-xl mb-3" data-i18n="servicesSubtitle"></p>
+              <p data-i18n="servicesDesc" class="mb-10"></p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+              <a href="/rct.html" class="card">
+                <div>
+                  <img src="./assets/images/services/cc-dental-root-canal-diagram.jpg" alt="RCT" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="rct" class="font-bold mb-3"></h5>
+                  <p data-i18n="rctDesc"></p>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <div>
+                  <img src="./assets/images/services/Dental-Implant.jpg" alt="Implant" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="dentalImplant" class="font-bold mb-3"></h5>
+                  <p data-i18n="dentalImplantDesc"></p>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <div>
+                  <img src="./assets/images/services/mos.jpg" alt="Mos" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="mos" class="font-bold mb-3"></h5>
+                  <p data-i18n="mosDesc"></p>
+                </div>
+              </a>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/whitening.jpg" alt="Whitening" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="whitening" class="font-bold mb-3"></h5>
+                  <p data-i18n="whiteningDesc"></p>
+                </div>
               </div>
-              <div class="col-span-3 bg-white p-4 pe-10 rounded-e-xl">
-                <p class="text-xl font-bold mb-3" data-i18n="dentalImplant"></p>
-                <p data-i18n="dentalImplantDesc"></p>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/braces.webp" alt="braces" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="braces" class="font-bold mb-3"></h5>
+                  <p data-i18n="bracesDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/icon.jpg" alt="icon" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="icon" class="font-bold mb-3"></h5>
+                  <p data-i18n="iconDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/dentures.webp" alt="dentures" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="dentures" class="font-bold mb-3"></h5>
+                  <p data-i18n="denturesDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/veneers.jpeg" alt="veneers" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="veneers" class="font-bold mb-3"></h5>
+                  <p data-i18n="veneersDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/crown.jpg" alt="crown" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="crown" class="font-bold mb-3"></h5>
+                  <p data-i18n="crownDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/scaling.png" alt="scaling" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="scaling" class="font-bold mb-3"></h5>
+                  <p data-i18n="scalingDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/filling.jpg" alt="filling" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="filling" class="font-bold mb-3"></h5>
+                  <p data-i18n="fillingDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/extraction.jpg" alt="extraction" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="extraction" class="font-bold mb-3"></h5>
+                  <p data-i18n="extractionDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/cbct.webp" alt="cbct" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="cbct" class="font-bold mb-3"></h5>
+                  <p data-i18n="cbctDesc"></p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <img src="./assets/images/services/gum.webp" alt="gum" class="w-full" />
+                </div>
+                <div class="service-desc">
+                  <h5 data-i18n="gum" class="font-bold mb-3"></h5>
+                  <p data-i18n="gumDesc"></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="container mx-auto"></div>
+      <section class="why-choose-us-section">
+        <div class="container mx-auto">
+          <div class="py-16 px-8 xl:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+              <div class="text-center hidden lg:block">
+                <!-- <div class="text-xl font-bold" data-i18n="whyChooseTitle"></div> -->
+                <div
+                  class="lg:text-6xl text-3xl uppercase my-8 leading-1.2 font-bold text-white"
+                  data-i18n="whyChooseTitle"
+                ></div>
+                <img src="./assets/images/logo.png" alt="Logo" class="w-2/3 mx-auto" />
+                <!-- <p data-i18n="whyChooseSubtitle2"></p> -->
+              </div>
+              <div class="grid grid-cols-1 gap-10">
+                <div class="text-center block lg:hidden">
+                  <div class="text-xl font-bold" data-i18n="whyChooseTitle"></div>
+                  <div
+                    class="lg:text-6xl text-3xl uppercase my-8 leading-1.2 font-bold text-white"
+                    data-i18n="whyChooseSubtitle"
+                  ></div>
+                  <p data-i18n="whyChooseSubtitle2"></p>
+                </div>
+                <div class="flex gap-6 items-center lg:border-b-2 lg:pb-10">
+                  <img src="./assets/images/icons/latest_technology.png" alt="Modern Technology" class="w-20 h-20" />
+                  <div>
+                    <div class="text-xl font-bold mb-2" data-i18n="modernTech"></div>
+                    <div>
+                      <span data-i18n="modernTechDesc"></span>
+                      <span class="font-bold" data-i18n="onlyUsedFotona"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center">
+                  <img
+                    src="./assets/images/icons/experienced_dentist.png"
+                    alt="Experienced Dentist"
+                    class="w-20 h-20"
+                  />
+                  <div>
+                    <div class="text-xl font-bold mb-2" data-i18n="expDentist"></div>
+                    <div>
+                      <span data-i18n="expDentistDesc"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-10">
+                <div class="flex gap-6 items-center lg:border-b-2 lg:pb-10">
+                  <img src="./assets/images/icons/personalized_care.png" alt="Personalized Care" class="w-20 h-20" />
+                  <div>
+                    <div class="text-xl font-bold mb-2" data-i18n="personCare"></div>
+                    <div>
+                      <span data-i18n="personCareDesc"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center">
+                  <img src="./assets/images/icons/affordable.png" alt="pricing" class="w-20 h-20" />
+                  <div>
+                    <div class="text-xl font-bold mb-2" data-i18n="affordable"></div>
+                    <div>
+                      <span data-i18n="affordableDesc"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section">
+        <div class="container mx-auto">
+          <div class="py-16 px-8 xl:px-12">
+            <div class="text-center">
+              <div class="text-5xl font-bold mb-5" data-i18n="ourPatients"></div>
+              <p class="text-xl mb-3" data-i18n="patientsSubtitle"></p>
+              <p data-i18n="patientsDesc" class="mb-10"></p>
+            </div>
+            <div class="reviews pb-5">
+              <div class="bg-blue-100 p-6 rounded-2xl shadow-lg max-w-md mx-4">
+                <div class="flex flex-col space-y-4">
+                  <span class="text-5xl text-blue-500">“</span>
+                  <p class="text-gray-700 italic">
+                    Had my retainers done here, extremely clean clinic, helpful staff. Dentists were very gentle and
+                    retainer i got has no issues after 6 month of use. My previous ones lasted less than 3 months and
+                    would have cracks this one looks just as new, they definitely did not use cheap materials for
+                    patients. EXCELLENT!
+                  </p>
+                  <div class="flex space-x-1 text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex items-center space-x-4 mt-4">
+                    <img
+                      src="https://placehold.co/50?text=J"
+                      alt="Joon Wei Tan"
+                      class="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <p class="font-bold text-gray-900">Joon Wei Tan</p>
+                      <p class="text-gray-500 text-sm">Google Review</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-100 p-6 rounded-2xl shadow-lg max-w-md mx-4">
+                <div class="flex flex-col space-y-4">
+                  <span class="text-5xl text-blue-500">“</span>
+                  <p class="text-gray-700 italic">
+                    Cabut gigi bongsu kt sini.. the doctors are very profesional,they have skills.. bg tahu xnk sakit,
+                    doktor tahu caranya.. sgt lembut hadap patient. Ada follow up the next Day.. Paling penting, TIADA
+                    hidden charge.
+                  </p>
+                  <div class="flex space-x-1 text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex items-center space-x-4 mt-4">
+                    <img
+                      src="https://placehold.co/50?text=N"
+                      alt="Nurul Atikah"
+                      class="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <p class="font-bold text-gray-900">Nurul Atikah</p>
+                      <p class="text-gray-500 text-sm">Google Review</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-100 p-6 rounded-2xl shadow-lg max-w-mdm mx-4">
+                <div class="flex flex-col space-y-4">
+                  <span class="text-5xl text-blue-500">“</span>
+                  <p class="text-gray-700 italic">
+                    Klinik gigi yg betul2 klinik gigi. Not an aesthetic dental care clinic. Last time I pernah pergi
+                    klinik lain in PD, kebanyakannya lepas kita rawat gigi kita, mereka akan offer whitening, polishing,
+                    dan lain2. Utk klinik Ai ni, Dr Lee & Dr Yap mmg akan rawat gigi kita yg betul2 sakit sahaja. Tak
+                    ada ambil kesempatan. Thanks to Dr. Lee. Sy suka cara dia educate her patients about how to take a
+                    good care our mouth. I datang dh banyak kali🤣. Last time I bawa husb. Husb pun suka klinik ni.
+                    Thank you
+                  </p>
+                  <div class="flex space-x-1 text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex items-center space-x-4 mt-4">
+                    <img
+                      src="https://placehold.co/50?text=T"
+                      alt="thesaxobeat"
+                      class="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <p class="font-bold text-gray-900">thesaxobeat</p>
+                      <p class="text-gray-500 text-sm">Google Review</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-100 p-6 rounded-2xl shadow-lg max-w-mdm mx-4">
+                <div class="flex flex-col space-y-4">
+                  <span class="text-5xl text-blue-500">“</span>
+                  <p class="text-gray-700 italic">
+                    Dr Yap is simply amazing. He spent time patiently listening to my issues and then treating me with
+                    the utmost care whilst dealing with my gum issues. He is a warm, kind and knowledgeable dentist . He
+                    gave advice on what to use and how to use interdentals, and which toothpaste was better for my teeth
+                    .I was so comfortable.To top it all off his charges are super reasonable . Just perfect, found the
+                    right dentist finally! As to the clinic, it is really modern with wooden flooring, minimalist
+                    concept with very clean toilets. The access is on the ground floor so convenient for the disabled,
+                    elderly or very young kids. There are no stairs! Parking is also plentiful. 5 stars all round. In my
+                    humble opinion probably the best dentist in PD.
+                  </p>
+                  <div class="flex space-x-1 text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex items-center space-x-4 mt-4">
+                    <img
+                      src="https://placehold.co/50?text=H"
+                      alt="Hema Ramachandra"
+                      class="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <p class="font-bold text-gray-900">Hema Ramachandra</p>
+                      <p class="text-gray-500 text-sm">Facebook Review</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-100 p-6 rounded-2xl shadow-lg max-w-mdm mx-4">
+                <div class="flex flex-col space-y-4">
+                  <span class="text-5xl text-blue-500">“</span>
+                  <p class="text-gray-700 italic">
+                    Dr. Lee is professional and friendly. She checked my teeth thoroughly and gave professional advice.
+                    I went to many dental clinics before but none of the dentist mentioned to me that I have Leong’s
+                    premolars. Like other’s comment here, She went extra mile in explaining dental care practice, she
+                    even demonstrated to me how to use dental floss and choose the right toothbrush. Also the price is
+                    reasonable and there are plenty of parking spaces here (suitable for people like me who has suck
+                    parking skills, haha). I would definitely come again!
+                  </p>
+                  <div class="flex space-x-1 text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex items-center space-x-4 mt-4">
+                    <img
+                      src="https://placehold.co/50?text=J"
+                      alt="Jia Ying"
+                      class="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <p class="font-bold text-gray-900">Jia Ying</p>
+                      <p class="text-gray-500 text-sm">Google Review</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-100 p-6 rounded-2xl shadow-lg max-w-mdm mx-4">
+                <div class="flex flex-col space-y-4">
+                  <span class="text-5xl text-blue-500">“</span>
+                  <p class="text-gray-700 italic">
+                    Good morning. I'll rate this clinic with as many stars for I've got my tooth treatment done n very
+                    happy with it. Received good explanation before doing and amazing scaling was done at this Klinik
+                    Pergigian Ai Gigi. Doctor did a very good job. It's really very well done with lots of patience n
+                    without rushing of time. Doctor n staff should be appreciated 👍 as my tooth was in a very bad
+                    situation. Could see the difference before n after. Very good atmosphere too👌 This dental rates are
+                    very reasonable compared to others,I've been treated before. Anyway I'm very happy with this Klinik
+                    Pergigian Ai Gigi, I've recommended to my friend's n family too. Best wishes to your Klinik
+                    Pergigian Ai Gigi 🙏
+                  </p>
+                  <div class="flex space-x-1 text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                      <path
+                        d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex items-center space-x-4 mt-4">
+                    <img
+                      src="https://placehold.co/50?text=K"
+                      alt="Krishnaveni"
+                      class="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <p class="font-bold text-gray-900">Krishnaveni</p>
+                      <p class="text-gray-500 text-sm">Google Review</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-10">
+              <a
+                href="https://www.google.com/maps/place/Klinik+Pergigian+Ai+Gigi+%E7%88%B1%E9%BD%BF%E7%89%99%E7%A7%91%E8%AF%8A%E6%89%80/@2.5658869,101.8249499,19z/data=!4m18!1m9!3m8!1s0x31cdef3a7487cf49:0x70ddabcec33f97c2!2zS2xpbmlrIFBlcmdpZ2lhbiBBaSBHaWdpIOeIsem9v-eJmeenkeiviuaJgA!8m2!3d2.5658869!4d101.8254971!9m1!1b1!16s%2Fg%2F11k3nlyl06!3m7!1s0x31cdef3a7487cf49:0x70ddabcec33f97c2!8m2!3d2.5658869!4d101.8254971!9m1!1b1!16s%2Fg%2F11k3nlyl06?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="bg-primary text-gray-800 font-semibold py-2 px-6 rounded-full shadow-md transition"
+                data-i18n="viewMoreBtn"
+              >
+                VIEW MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactUs-section" id="contactUs">
+        <div class="container mx-auto">
+          <div class="py-16 px-8 xl:px-12">
+            <div class="text-center">
+              <div class="text-5xl font-bold mb-5" data-i18n="contactUs"></div>
+              <p class="text-xl mb-10" data-i18n="contactUsSubtitle"></p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <div class="font-bold uppercase">Ai Gigi Dental Sdn. Bhd.</div>
+                  <div class="text-xs">202201028779 (1474476H)</div>
+                </div>
+                <div>
+                  <div class="font-bold uppercase" data-i18n="address"></div>
+                  <div class="text-xs">
+                    Pecahan Lot 549, Batu 3 1, 2, Jalan Seremban, Lukut, 71010 Port Dickson, Negeri Sembilan
+                  </div>
+                </div>
+                <div>
+                  <div class="font-bold uppercase" data-i18n="email"></div>
+                  <div class="text-xs">klinikpergigianaigigi@gmail.com</div>
+                </div>
+                <div></div>
+                <div>
+                  <div class="font-bold uppercase" data-i18n="phone"></div>
+                  <div class="text-xs">
+                    <p class="mb-1">Whatsapp:</p>
+                    <p>+ 6011 - 5428 8213</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="font-bold uppercase" data-i18n="openingHours"></div>
+                  <div class="text-xs">
+                    <p data-i18n="weekday"></p>
+                    <p data-i18n="weekend"></p>
+                    <p data-i18n="holiday"></p>
+                  </div>
+                </div>
+                <div></div>
+                <div class="flex grid-cols-2 gap-3 items-center">
+                  <a href="https://www.facebook.com/klinik.aigigi.lukutpd" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" class="w-10 h-10">
+                      <path
+                        fill="#1877F2"
+                        d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"
+                      />
+                      <path
+                        fill="#ffffff"
+                        d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/klinik.aigigi.lukutpd/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" class="w-10 h-10">
+                      <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)" />
+                      <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)" />
+                      <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)" />
+                      <path
+                        d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                        fill="white"
+                      />
+                      <defs>
+                        <radialGradient
+                          id="paint0_radial_87_7153"
+                          cx="0"
+                          cy="0"
+                          r="1"
+                          gradientUnits="userSpaceOnUse"
+                          gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
+                        >
+                          <stop stop-color="#B13589" />
+                          <stop offset="0.79309" stop-color="#C62F94" />
+                          <stop offset="1" stop-color="#8A3AC8" />
+                        </radialGradient>
+                        <radialGradient
+                          id="paint1_radial_87_7153"
+                          cx="0"
+                          cy="0"
+                          r="1"
+                          gradientUnits="userSpaceOnUse"
+                          gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"
+                        >
+                          <stop stop-color="#E0E8B7" />
+                          <stop offset="0.444662" stop-color="#FB8A2E" />
+                          <stop offset="0.71474" stop-color="#E2425C" />
+                          <stop offset="1" stop-color="#E2425C" stop-opacity="0" />
+                        </radialGradient>
+                        <radialGradient
+                          id="paint2_radial_87_7153"
+                          cx="0"
+                          cy="0"
+                          r="1"
+                          gradientUnits="userSpaceOnUse"
+                          gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"
+                        >
+                          <stop offset="0.156701" stop-color="#406ADC" />
+                          <stop offset="0.467799" stop-color="#6A45BE" />
+                          <stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
+                        </radialGradient>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.454533334201!2d101.8249499!3d2.5658869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdef3a7487cf49%3A0x70ddabcec33f97c2!2zS2xpbmlrIFBlcmdpZ2lhbiBBaSBHaWdpIOeIsem9v-eJmeenkeiviuaJgA!5e0!3m2!1sen!2smy!4v1739277509871!5m2!1sen!2smy"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="social-overlay-button absolute">
+    <div class="social-overlay-button fixed">
       <a
         href="https://wa.me/601154288213?text=Hi, Ai Gigi Dental!"
         target="_blank"
-        class="btn btn-animated bg-whatsapp gap-2 py-2"
+        class="btn btn-animated bg-whatsapp gap-2 py-2 shadow-lg"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -505,6 +1048,9 @@
         <span data-i18n="whatsappUs" class="text-sm"></span
       ></a>
     </div>
+    <footer class="text-center bg-black text-white py-5 text-xs">
+      <p>© <span id="year"></span> Ai Gigi Dental Sdn. Bhd. 202201028779 (1474476H) All Rights Reserved.</p>
+    </footer>
   </body>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -516,6 +1062,9 @@
     referrerpolicy="no-referrer"
   ></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script>
     tailwind.config = {
@@ -558,7 +1107,6 @@
 
       // Update the button label for the selected language
       const currentLanguage = i18next.language;
-      console.log(currentLanguage);
       document.querySelector('.lang-dropdown span').textContent = i18next.t('language');
       document.querySelectorAll('[data-lang]').forEach(langButton => {
         const lang = langButton.getAttribute('data-lang');
@@ -643,6 +1191,33 @@
           });
         }
       });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    $('.reviews').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   </script>
 </html>
